@@ -7,7 +7,7 @@
 \usepackage[ngerman]{babel}
 \renewcommand*{\familydefault}{\sfdefault}
 \usepackage[full]{leadsheets}
-\usepackage{abc}
+\usepackage[generate,ps2eps]{abc}
 
 \begin{document} 
 
@@ -15,8 +15,8 @@
 
   \begin{intro}
 
-    3x |: Em | G | D | Em C :|
-    
+    3x |: Em | G | D | Em C :| \hfill\fbox{Git: S/W}
+
   \end{intro}
   
   \begin{verse}
@@ -66,7 +66,7 @@
 
   \begin{info}
   
-    \emph{instrumental}    
+    \emph{instrumental} \hfill\fbox{\parbox{2cm}{Kick Ass Bass \\ B1/2 @ A61}}
 
     \medskip
 
@@ -78,15 +78,14 @@
 
 \end{song}
 
-\noindent Synthbass Solo:
-
-\begin{abc}[name=sex-synbass]
+\begin{abc}[name=sex-synbass,program={abcm2ps -O =}]
 T:Synthbass Solo
-X:1
+I:linebreak !
+X:2
 M:4/4
 L:1/2
-K:C clef=bass middle=d
-|| A d | g f | A d | c B1/2>c1/2 | 
+K:C middle=d clef=bass
+|| A d | g f | A d | c B1/2>c1/2 |! 
 A d | g f | A f | A g ||
 \end{abc}
 
